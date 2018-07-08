@@ -14,6 +14,27 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+// 封装 微信请求
+function request(url, data = {}, method = "GET") {
+  return new Promise(function(resolve,reject){
+    wx.request({
+      url: url,
+      data: data,
+      method: method,
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function(res){
+        console.log(res, 'success')
+        resolve(res)
+      },
+      fail: function(err){
+        reject(err)
+      }
+    })
+  })
+}
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  request: request
 }

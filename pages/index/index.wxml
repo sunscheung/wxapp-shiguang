@@ -1,13 +1,10 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!-- 顶部搜索栏 -->
+  <view class="section searchBar">
+    <view class="searchBar-box {{isSearchTap?'tap':''}}">
+      <image src="../../static/icons/search.png"  class="search-icon"></image>
+      <input type="text" disabled="true"class="search-input" placeholder-class="search-plac" placeholder="搜索电影" bindtap="toSearch"></input>
+    </view>
   </view>
 </view>
