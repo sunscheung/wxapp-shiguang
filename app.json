@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/rank/rank",
+    "pages/search/search",
+    "pages/logs/logs",
+    "pages/me/me"
+  ],
+  "tabBar": {
+    "backgroundColor": "#1c2635",
+    "selectedColor": "#fff",
+    "color": "#bbb",
+    "borderStyle": "white",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "榜单"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1c2635",
+    "navigationBarTitleText": "时光网",
+    "navigationBarTextStyle": "#fff"
+  }
+}
