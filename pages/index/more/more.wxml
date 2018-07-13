@@ -1,0 +1,16 @@
+<!--pages/index/more/more.wxml-->
+<import src="../../../templates/card/card.wxml" />
+<view class='more'>
+  <view class='more_header'>
+    <view class='more_tabs'>
+      <view class='{{activeIndex === index ? "active more_item" : "more_item"}}' bindtap='_toggleTabs' data-index="{{index}}" wx:for="{{listInfo}}" wx:key="index">{{item}}</view>
+    </view>
+  </view>
+  <!-- list -->
+  <view class='more_con'>
+    <template is="card" data="{{movies}}"></template>
+  </view>
+  <view class="weui-loadmore" wx:if="{{state == 'load'}}">
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</view>

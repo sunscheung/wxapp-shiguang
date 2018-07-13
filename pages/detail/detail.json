@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mVideo": "../../component/video/video",
+    "spacing": "../../component/spacing/spacing"
+  }
+}

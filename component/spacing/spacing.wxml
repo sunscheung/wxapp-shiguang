@@ -1,0 +1,2 @@
+<!--component/spacing/spacing.wxml-->
+<view class='spacing' style='height:{{height}}px;background:{{color}}'></view>

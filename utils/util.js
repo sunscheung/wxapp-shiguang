@@ -34,7 +34,10 @@ function request(url, data = {}, method = "GET") {
     })
   })
 }
+
+export const ERR_OK = 0
 module.exports = {
   formatTime: formatTime,
-  request: request
+  request: request,
+  ERR_OK: ERR_OK
 }

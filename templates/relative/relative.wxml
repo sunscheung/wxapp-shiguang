@@ -1,0 +1,14 @@
+<!-- 应该弄成个组件的，。。。 -->
+<template name="relative">
+  <view class="relative-item" wx:for="{{relative_movies}}" wx:key="index" wx:for-item="item" bindtap='toDetail' data-id='{{item._id}}'>
+    <image src="http://movies.kyriel.cn/{{item.posterKey}}"></image>
+    <view class="relative_desc">
+      <view class="relative_tit elli1">{{item.title}}</view>
+      <view class="relative_rate">
+        <text wx:if="{{item.rate !==0}}">豆瓣评分：</text>
+        <text class="yellow">{{item.rate}}</text>
+      </view>
+      <view class="relative_en_title elli1">类型: {{item.movieTypes}}</view>
+    </view>
+  </view>
+</template>

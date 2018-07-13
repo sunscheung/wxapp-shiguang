@@ -6,3 +6,22 @@
   flex-direction: column;
   box-sizing: border-box;
 } 
+image{
+  width: 100%
+}
+/*隐藏滚动条*/
+::-webkit-scrollbar{    
+  height: 0;
+  width: 0;
+  color: transparent;
+}
+.yellow{
+  color: #faaf00;
+}
+
+.elli1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

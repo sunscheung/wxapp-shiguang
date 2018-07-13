@@ -1,0 +1,4 @@
+/* component/spacing/spacing.wxss */
+.spacing{
+  margin: 6rpx 0
+}

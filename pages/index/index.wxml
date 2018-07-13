@@ -3,8 +3,38 @@
   <!-- 顶部搜索栏 -->
   <view class="section searchBar">
     <view class="searchBar-box {{isSearchTap?'tap':''}}">
-      <image src="../../static/icons/search.png"  class="search-icon"></image>
-      <input type="text" disabled="true"class="search-input" placeholder-class="search-plac" placeholder="搜索电影" bindtap="toSearch"></input>
+      <image src="../../static/icons/search.png" class="search-icon"></image>
+      <input type="text" disabled="true" class="search-input" placeholder-class="search-plac" placeholder="搜索电影" bindtap="toSearch"></input>
     </view>
+  </view> 
+  <!-- swiper -->
+  <view class="section swiperWrap">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:for-item="item"  wx:key="new Date().getTime()">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
   </view>
+  <!-- 组件 标题和List -->
+  <!-- 正在热映 -->
+  <movite 
+  title="{{hot_title}}"
+  movies="{{hot_movies}}"
+  count="{{hot_count}}"
+  bind:more="more"
+  data-type="1"
+  bind:select="select"
+  ></movite>
+
+  <!-- 即将上映 -->
+  <movite 
+  title="{{comming_title}}"
+  movies="{{comming_movies}}"
+  count="{{comming_count}}"
+  bind:more="more"
+  data-type="0"
+  bind:select="select"
+  ></movite>
 </view>

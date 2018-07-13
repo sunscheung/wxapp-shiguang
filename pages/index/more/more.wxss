@@ -1,0 +1,40 @@
+/* pages/index/more/more.wxss */
+/* 引入template 对应的css... */
+@import "../../../templates/relative/relative.wxss";
+.more {
+  width: 100%;
+}
+
+.more_header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #1c2635;
+}
+
+.more_tabs {
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0;
+  border: 1px solid #0d121a;
+  border-radius: 100px;
+  background: #0d121a;
+}
+
+.more_item {
+  flex: 1;
+  height: 100%;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.more_item.active {
+  background: #1c2635;
+}

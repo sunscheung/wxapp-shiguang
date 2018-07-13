@@ -1,0 +1,4 @@
+<!--component/video/video.wxml-->
+<view class='video'>
+    <video id="myVideo" src="http://movies.kyriel.cn/{{videoUrl}}" showStatusBar enable-progress-gesture poster="http://movies.kyriel.cn/{{coverImg}}" autoplay show-play-btn  enable-danmu controls></video>
+</view>

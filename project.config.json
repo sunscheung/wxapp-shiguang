@@ -15,6 +15,11 @@
 	"appid": "wx76ed8d75fc3fdc35",
 	"projectname": "wxapp-maoyan",
 	"isGameTourist": false,
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
 	"condition": {
 		"search": {
 			"current": -1,

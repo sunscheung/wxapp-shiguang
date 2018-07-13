@@ -1,0 +1,40 @@
+/* pages/detail/detail.wxss */
+
+/* 引入template 对应的css... */
+@import "../../templates/relative/relative.wxss";
+
+.section {
+  width: 100%;
+}
+
+.detail-con {
+  padding: 0 10rpx;
+}
+
+.detail-header {
+  display: flex;
+  width: 100%;
+  padding: 20rpx 0;
+  justify-content: space-between;
+}
+
+.detail_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.detail_icon {
+  font-size: 18px;
+}
+
+.desc {
+  margin-top: 20px;
+  color: #777;
+  font-size: 15px;
+}
+
+.relative-list{
+  min-height: 200rpx;
+  position: relative;
+
+}

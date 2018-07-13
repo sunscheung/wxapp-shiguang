@@ -1,0 +1,23 @@
+<!--component/block/block.wxml-->
+<view class="block">
+  <view class="block-header">
+    <view class="block_title" bindtap="_more">
+      {{title}} {{count}} 部
+    </view>
+    <view class="block_icon" bindtap='_more'>
+      >
+    </view>
+  </view>
+  <!-- list -->
+  <view class='block-list'>
+    <!-- item -->
+    <view class="block_movie" wx:for="{{movies}}" wx:for-item="item" wx:key="*this" bindtap='_select' data-id="{{item._id}}">
+      <view class='block_image'>
+        <!-- <view class='block_image_m block_image' style='background-image: url(http://movies.kyriel.cn/xNibe7YHdw7JheCfrE5JS.jpg)'></view> -->
+        <image src="http://movies.kyriel.cn/{{item.posterKey}}"></image>
+        <em class="rate" wx-if="{{item.rate !== 0}}">{{item.rate}}</em>
+      </view>
+      <p class="title">{{item.title}}</p>
+    </view>
+  </view>
+</view>

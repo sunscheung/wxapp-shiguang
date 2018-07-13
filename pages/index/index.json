@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "movite": "../../component/block/block"
+  }
+}

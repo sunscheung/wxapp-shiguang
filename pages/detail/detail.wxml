@@ -1,0 +1,24 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../templates/relative/relative.wxml" />
+<view class='section detail'>
+  <mVideo 
+    videoUrl="{{movie.videoKey}}"
+    coverImg="{{movie.coverKey}}"
+  ></mVideo>
+  <view class='detail-con'>
+    <view class="detail-header">
+      <view class="detail_title" wx:if="{{movie.title}}">
+        {{movie.title}}
+      </view>
+      <view class="detail_icon">
+        简介 》
+      </view>
+    </view>
+    <text class='desc'>{{desc}}</text>
+  </view>
+  <spacing height="2" color="#f9f9f9"></spacing> 
+  <!-- 相关推荐 -->
+  <view class='relative-list'>
+    <template is="relative" data="{{relative_movies}}"></template>
+  </view>
+</view>

@@ -1,0 +1,68 @@
+/* component/block/block.wxss */
+
+.block {
+  position: relative;
+  min-height: 100rpx;
+  padding: 0 10rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.block-header {
+  display: flex;
+  width: 100%;
+  padding: 20rpx 0;
+  justify-content: space-between;
+}
+
+.block_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.block_icon {
+  font-size: 18px;
+}
+
+.block-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.block_movie {
+  width: 25%;
+  padding-right: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.block_movie .block_image {
+  width: 100%;
+  position: relative;
+  height: 80%;
+}
+
+.block_image image {
+  height: 200rpx;
+}
+
+.block_image_m {
+  background-size: cover;
+}
+
+.block_movie .rate {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  color: #ffb400;
+}
+
+.block_movie .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

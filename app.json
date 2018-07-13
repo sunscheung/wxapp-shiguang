@@ -5,7 +5,9 @@
     "pages/rank/rank",
     "pages/search/search",
     "pages/logs/logs",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/detail/detail",
+    "pages/index/more/more"
   ],
   "tabBar": {
     "backgroundColor": "#1c2635",

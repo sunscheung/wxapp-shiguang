@@ -1,0 +1,15 @@
+<template name="card">
+  <view class="relative-item" wx:for="{{movies}}" wx:key="index" data-id='{{item._id}}' bindtap='toDetail'>
+    <view class='card_image'>
+      <image src='http://movies.kyriel.cn/{{item.posterKey}}'></image>
+    </view>
+    <view class='relative_desc'>
+      <view class='relative_tit'>{{item.title}}</view>
+      <view class="relative_rate">
+        <text>观众评</text>
+        <text class="yellow">{{item.rate}}</text>
+      </view>
+      <view class="relative_en_title elli1">时长：{{item.duration}}</view>
+    </view>
+  </view>
+</template>
