@@ -1,2 +1,23 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class='search-page'>
+  <!-- 搜索 -->
+  <view class="search-wrap">
+    <view class="search_form">
+      <view class="search_input_box">
+        <icon type="search" class='search_icon' size="14" color="#ccc" />
+        <input type="text" class="search_inp" placeholder="搜索"></input>
+      </view>
+    </view>
+    <view class="search_btn">搜索</view>
+  </view>
+  <!-- 热门搜索 -->
+  <view class='search_hot'>
+    <block>
+    <text class=''></text>
+    </block>
+  </view>
+  <!-- 历史 -->
+  <view class='search_history'>
+    
+  </view>
+</view>
