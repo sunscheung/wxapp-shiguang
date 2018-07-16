@@ -19,5 +19,15 @@ module.exports = {
     return request(testRootUrl + '/api/client/movie/get_relative/'+ id).then((res) => {
       return res.data
     })
+  },
+  getHotKey: function (){
+    return request(testRootUrl + '/api/client/movie/gethotkey').then((res) => {
+      return res.data
+    })
+  },
+  searchMovie: function(params){
+    return request(testRootUrl + '/api/client/movie/search', params).then((res) => {
+      return res.data
+    })
   }
 }

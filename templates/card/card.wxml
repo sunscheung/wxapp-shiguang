@@ -1,5 +1,5 @@
 <template name="card">
-  <view class="relative-item" wx:for="{{movies}}" wx:key="index" data-id='{{item._id}}' bindtap='toDetail'>
+  <view class="relative-item" wx:for="{{movies}}" wx:key="index" data-id='{{item._id}}' bindtap='gotoDetail'>
     <view class='card_image'>
       <image src='http://movies.kyriel.cn/{{item.posterKey}}'></image>
     </view>

@@ -29,15 +29,26 @@ function request(url, data = {}, method = "GET") {
         resolve(res)
       },
       fail: function(err){
+        wx.showLoading({
+          title: '出错啦',
+        })
         reject(err)
       }
     })
   })
 }
 
+const gotoDetail = (e)=>{
+  console.log(id, 'id')
+  const id = e.currentTarget.dataset.id
+  wx.navigateTo({
+    url: `/pages/detail/detail?id=${id}`
+  })
+}
 export const ERR_OK = 0
 module.exports = {
   formatTime: formatTime,
   request: request,
-  ERR_OK: ERR_OK
+  ERR_OK: ERR_OK,
+  gotoDetail: gotoDetail
 }

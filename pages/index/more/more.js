@@ -1,5 +1,5 @@
 // pages/index/more/more.js
-import { request, ERR_OK } from "../../../utils/util.js"
+import { request, ERR_OK, gotoDetail } from "../../../utils/util.js"
 import getData from "../../../config/api.js"
 Page({
 
@@ -50,12 +50,13 @@ Page({
     })
   },
   // 更多点击跳转
-  toDetail(e) {
-    const id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: '../../detail/detail?id=' + id
-    })
-  },
+  // toDetail(e) {
+  //   const id = e.currentTarget.dataset.id
+  //   wx.navigateTo({
+  //     url: '../../detail/detail?id=' + id
+  //   })
+  // },
+  gotoDetail,
   _getMovies(type) {
     let that = this
     this.setData({
